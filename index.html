@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>github-user-search-app</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="title__block">
+        <h1 class="title text">devfinder</h1>
+        <div class="mode">
+          <button class="mode__btn">
+            <h4 class="h4 mode__text">dark</h4>
+            <img src="./img/moon.svg" alt="" class="img__moon" />
+            <img src="./img/sun.svg" alt="" class="img__sun none" />
+          </button>
+        </div>
+      </div>
+      <form class="search__form">
+        <div class="img__box">
+          <img src="./img/mobile-search-icon.png" alt="" class="search__icon" />
+        </div>
+        <div class="input__box">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search GitHub username…"
+          />
+          <button class="btn search__btn">Search</button>
+          <span class="error none"></span>
+        </div>
+        <div class="button__box"></div>
+      </form>
+      <div class="output">
+        <div class="avatar">
+          <img src="./img/Oval-cat.png" alt="" class="mobile avatar__img" />
+          <img src="./img/cat-desktop.svg" alt="" class="desktop avatar__img" />
+          <div class="avatar__text">
+            <div class="avatar__text-block">
+              <div class="user__block">
+                <h3 class="user text">The Octocat</h3>
+                <h4 class="nickname">@octocat</h4>
+              </div>
+            </div>
+            <h4 class="h4 date text">
+              Joined
+              <span class="h4 span__date text">25 Jan 2011</span>
+            </h4>
+          </div>
+        </div>
+        <div class="h4 info__block">
+          <p class="h4 p__info text">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+            odio. Quisque volutpat mattis eros.
+          </p>
+        </div>
+        <div class="followers__block">
+          <div class="counter__box posts">
+            <p class="followers__text post__title text">Repos</p>
+            <p class="followers__number post__counter text">8</p>
+          </div>
+          <div class="counter__box followers">
+            <p class="followers__text followers__title text">Followers</p>
+            <p class="followers__number followers__counter text">3938</p>
+          </div>
+          <div class="counter__box following">
+            <p class="followers__text following__title text">Following</p>
+            <p class="followers__number following__counter text">9</p>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="location">
+            <div class="location__block place">
+              <img src="./img/003-pin.svg" alt="" class="location__icon icon" />
+              <a href="" class="h4 location__place text">San Francisco</a>
+            </div>
+            <div class="location__block link">
+              <img src="./img/002-url.svg" alt="" class="link__icon icon" />
+              <a href="" class="h4 location__text text">https://github.blog</a>
+            </div>
+            <div class="location__block twitter">
+              <img
+                src="./img/004-twitter.svg"
+                alt=""
+                class="twitter__icon icon"
+              />
+              <a href="" class="h4 twitter__text text">Not Available</a>
+            </div>
+            <div class="location__block github">
+              <img
+                src="./img/001-office-building.svg"
+                alt=""
+                class="github__icon icon"
+                id="building"
+              />
+              <a href="" class="h4 github__text text">@github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
